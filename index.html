@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script rel="text/javasript" src="script.js" defer></script>
+    <title>JUEGO</title>
+</head>
+<body>
+    <button class="empezar"lass="empe" onclick="empezar()">START</button>
+    
+
+    <table class="juego">
+    <tr>
+        <td class="fondo">JUGADOR 1 <select id="porcentaje1"><option >60%</option><option>80%</option><option>100%</option></select></td>
+        <td> RESULTADO </td>
+        <td class="fondo">JUGADOR 2 <select id="porcentaje2"><option>90%</option></select></td>
+    </tr>
+
+    <tr>
+        <td class="fondo" class="estilo_celda" ><button class="atacar"id="atacar1" onclick="atacar1()">ATACAR</button><button class="pasar" id="pasar1" onclick="pasar1()">PASAR</button><button class="quien" ><select id="aquien1" ><option id="bloqueo2">JUGADOR 2</option><option id="bloqueo3">JUGADOR 3</option></select></button></td>
+        <td></td>
+        <td class="fondo" class="estilo_celda" ><button class="atacar" id="atacar2" onclick="atacar2()">ATACAR</button><button class="pasar" id="pasar2" onclick="pasar2()">PASAR</button><button class="quien" ><select id="aquien2"><option id="bloqueo3">JUGADOR 3</option><option id="bloqueo1">JUGADOR 1</option></select></button></td>
+    </tr>
+    <tr>
+        <td  class="fondo" id="vida1">VIVO</td>
+        <td style="border:0px"></td>
+        <td  class="fondo" id="vida2">VIVO</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="fondo">JUGADOR 3 <select id="porcentaje3"><option>70%</option></select></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td  class="fondo" class="estilo_celda" ><button class="atacar"id="atacar3" onclick="atacar3()">ATACAR</button><button class="pasar" id="pasar3" onclick="pasar3()">PASAR</button><button class="quien"><select id="aquien3"><option id="bloqueo1">JUGADOR 1</option><option id="bloqueo2">JUGADOR 2</option></select></button></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="fondo" id="vida3">VIVO</td>        
+        <td></td>
+    </tr>
+    </table>
+</body>
+</html>

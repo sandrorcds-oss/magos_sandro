@@ -1,0 +1,53 @@
+.juego {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    width: 480px;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    width: 600px;
+}
+
+
+.atacar{
+    background-color: rgb(172, 45, 45);
+    width: 100%;
+}
+
+.pasar{
+    background-color: rgb(44, 44, 172);
+    width: 100%;
+}
+
+.quien{
+    background-color: rgb(17, 201, 69);
+    width: 100%;
+}
+
+body{
+    background: #000;
+}
+
+.fondo{
+    background: #fdfdfd;
+}
+
+.estilo_celda{
+    width: 800px;
+}
+
+.empezar{
+    background-color: rgb(239, 239, 130);
+    
+}
+
+.empe{
+    border:none;
+    top: 0%;
+    left: 0%;
+}
