@@ -27,5 +27,43 @@ th, td {
 
 # Para la parte de Java
 Este código es el que hace funcionar el juego. Primero, todos los botones están desactivados y, al pulsar START, 
-empieza la partida. Los jugadores van pasando los turnos y pueden atacar o pasar. Los ataques tienen una probabilidad de salir bien 
+empieza la partida.
+``` java
+
+let contador_vida=1
+document.getElementById("atacar1").disabled =true;
+document.getElementById("pasar1").disabled =true;
+document.getElementById("aquien1").disabled =true;
+document.getElementById("atacar2").disabled =true;
+document.getElementById("pasar2").disabled =true;
+document.getElementById("aquien2").disabled =true;
+document.getElementById("atacar3").disabled =true;
+document.getElementById("pasar3").disabled =true;
+document.getElementById("aquien3").disabled =true;
+document.getElementById("vida1").innerHTML = "VIVO"
+document.getElementById("vida2").innerHTML = "VIVO"
+document.getElementById("vida3").innerHTML = "VIVO"
+
+
+function empezar(){
+    console.log("Holi, que tal ese mewing");
+    document.getElementById("atacar1").disabled =false;
+    document.getElementById("pasar1").disabled =false;
+    document.getElementById("aquien1").disabled =false;
+    document.getElementById("atacar2").disabled =true;
+    document.getElementById("pasar2").disabled =true;
+    document.getElementById("aquien2").disabled =true;
+    document.getElementById("atacar3").disabled =true;
+    document.getElementById("pasar3").disabled =true;
+    document.getElementById("aquien3").disabled =true;
+    document.getElementById("bloqueo1").disabled =false;
+    document.getElementById("bloqueo2").disabled =false;
+    document.getElementById("bloqueo3").disabled =false;
+    document.getElementById("vida1").innerHTML = "VIVO"
+    document.getElementById("vida2").innerHTML = "VIVO"
+    document.getElementById("vida3").innerHTML = "VIVO"
+    contador_vida = 1
+}
+```
+Los jugadores van pasando los turnos y pueden atacar o pasar. Los ataques tienen una probabilidad de salir bien 
 según el porcentaje de cada jugador. Si un ataque funciona, el jugador atacado queda eliminado. Cuando solo queda uno vivo, el juego termina y se desactivan todos los botones.
