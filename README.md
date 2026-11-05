@@ -25,7 +25,7 @@ th, td {
 }
 ```
 
-# Para la parte de Java
+# Para la parte de JavaScript
 Este código es el que hace funcionar el juego. Primero, todos los botones están desactivados y, al pulsar START, 
 empieza la partida.
 ``` java
