@@ -66,4 +66,20 @@ function empezar(){
 }
 ```
 Los jugadores van pasando los turnos y pueden atacar o pasar. Los ataques tienen una probabilidad de salir bien 
-según el porcentaje de cada jugador. Si un ataque funciona, el jugador atacado queda eliminado. Cuando solo queda uno vivo, el juego termina y se desactivan todos los botones.
+según el porcentaje de cada jugador. Si un ataque funciona, el jugador atacado queda eliminado. lo que hace es que el porcentaje que ha cogido lo divide entre 100 y saca con  un math.random un numero del 1 al 0, y saca el porcentaje de daño. Cuando el juego detecta que dos personas  han muerto y añade al contador 1 cuando alguien muere cuando llega a 3 se para el juego. Cuando solo queda uno vivo, el juego termina y se desactivan todos los botones.
+``` java
+
+    function fin_juego(){
+        document.getElementById("atacar1").disabled =true;
+        document.getElementById("pasar1").disabled =true;
+        document.getElementById("aquien1").disabled =true;
+        document.getElementById("atacar2").disabled =true;
+        document.getElementById("pasar2").disabled =true;
+        document.getElementById("aquien2").disabled =true;
+        document.getElementById("atacar3").disabled =true;
+        document.getElementById("pasar3").disabled =true;
+        document.getElementById("aquien3").disabled =true;
+    }
+    
+
+```
